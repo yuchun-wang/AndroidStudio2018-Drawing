@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="yuc1996229.iim.ncku.edu.tw.finalproject.MainActivity">
+
+    <ImageView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/welcome" />
+
+    <Button
+        android:id="@+id/startset"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/welcome"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/buttom_shape"
+        android:shadowColor="#D6D4CB"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="Start Setting"
+        android:textColor="#FFFCF2"
+        android:textSize="20sp" />
+
+</RelativeLayout>

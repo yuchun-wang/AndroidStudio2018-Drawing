@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="yuc1996229.iim.ncku.edu.tw.finalproject.MainActivity">
+
+    <ImageView
+        android:id="@+id/who"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="23dp"
+        android:src="@drawable/who" />
+
+    <EditText
+        android:id="@+id/name"
+        android:hint="Enter your name"
+        android:singleLine="true"
+        style="@style/Widget.AppCompat.AutoCompleteTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ok"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp" />
+
+    <Button
+        android:id="@+id/ok"
+        android:text="OK"
+        android:textColor="#FFFCF2"
+        android:textSize="20sp"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="125dp"
+        android:background="@drawable/buttom_shape"
+        android:shadowColor="#D6D4CB"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+</RelativeLayout>
+

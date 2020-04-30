@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="yuc1996229.iim.ncku.edu.tw.finalproject.DrawPictureActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="15dp"
+        android:text="Draw what you saw : "
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/again"
+        android:text="Again"
+        android:textColor="#FFFCF2"
+        android:textSize="20sp"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_toLeftOf="@+id/finish"
+        android:layout_toStartOf="@+id/finish"
+        android:background="@drawable/buttom_shape"
+        android:shadowColor="#D6D4CB"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <Button
+        android:id="@+id/finish"
+        android:text="Finish"
+        android:textColor="#FFFCF2"
+        android:textSize="20sp"
+        android:onClick="OnSaveClicked"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/drawingView"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/drawingView"
+        android:layout_marginEnd="47dp"
+        android:layout_marginRight="47dp"
+        android:background="@drawable/buttom_shape"
+        android:shadowColor="#D6D4CB"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5" />
+
+    <yuc1996229.iim.ncku.edu.tw.finalproject.DrawingView
+        android:id="@+id/drawingView"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/background"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
